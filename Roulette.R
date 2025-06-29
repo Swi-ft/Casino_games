@@ -85,7 +85,7 @@ play_roulette_game <- function(){
   money <- as.numeric(readline("Enter initial money (e.g., 1000): "))
   repeat {
     cat("\n--- Roulette ---\n")
-    cat("You have:", money, "chips\n")
+    cat("You have:", money, "money\n")
     bet_amount <- as.numeric(readline("Enter your bet amount: "))
     if(bet_amount > money){
       cat("You can't bet more than you have!\n")
@@ -129,7 +129,7 @@ play_roulette_game <- function(){
     cont <- tolower(readline("Do you want to play again? (yes/no): "))
     if(cont != "yes") break
   }
-  cat("Thanks for playing! You leave with", money, "chips.\n")
+  cat("Thanks for playing! You leave with", money, "money.\n")
 }
 
 # Uncomment below to play the interactive game
